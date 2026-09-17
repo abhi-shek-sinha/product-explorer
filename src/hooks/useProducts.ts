@@ -16,6 +16,7 @@ export function useProducts() {
     async function load() {
       try {
         setLoading(true);
+        setError(null);
         const res = await fetch("https://fakestoreapi.com/products");
         if (!res.ok) {
           throw new Error(`Request failed with status ${res.status}`);
@@ -24,7 +25,7 @@ export function useProducts() {
         if (!cancelled) {
           setProducts(data);
         }
-      } catch (err) {
+      } catch {
         if (!cancelled) {
           setError("Something went wrong while loading products.");
         }
