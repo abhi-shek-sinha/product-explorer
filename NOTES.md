@@ -7,7 +7,7 @@
 For each: what was wrong, **why** it was wrong, and how I fixed it.
 
 1. after running the application using npm run dev in network tab i find out that its calling the api again and again and it is because of the use effect dependensies so i have removed it from there.
-2.
+2. removing any and using product type in useproduct.ts for better type safty.
 3.
 
 ## Features I completed
