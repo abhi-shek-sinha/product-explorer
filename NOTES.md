@@ -16,7 +16,8 @@ For each: what was wrong, **why** it was wrong, and how I fixed it.
 ## Features I completed
 
 - 1st todo adone added a visually good error msg.
--
+
+- animating the modal is also done. its smoth and it feels like its popping out.
 
 ## Decisions
 

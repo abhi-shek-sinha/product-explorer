@@ -19,6 +19,7 @@ export function Filters({
     <div className="mb-2 flex flex-col gap-3 sm:flex-row">
       <input
         type="text"
+        name="search-bar"
         value={search}
         onChange={(e) => onSearchChange(e.target.value)}
         placeholder="Search products…"
@@ -26,6 +27,7 @@ export function Filters({
       />
       <select
         value={category}
+        name="category-select"
         onChange={(e) => onCategoryChange(e.target.value)}
         className="rounded-lg border border-slate-300 bg-white px-4 py-2 outline-none focus:border-slate-500"
       >
