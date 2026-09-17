@@ -23,10 +23,14 @@ For each: what was wrong, **why** it was wrong, and how I fixed it.
 
 Anywhere I had to choose between options — and why I chose what I did.
 
+
 -
 
 ## With more time
 
 What I'd improve or add next.
+
+would have added raitings to the products.
+whould have desined the product card in better way
 
 -
