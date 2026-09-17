@@ -48,7 +48,11 @@ export default function HomePage() {
 
       {loading && <p className="mt-8 text-slate-500">Loading products…</p>}
 
-      {error && <p className="mt-8 text-red-500">Error: {error}</p>}
+      {error && (
+        <div className="mt-8 rounded-lg border border-red-200 bg-red-50 p-4 text-red-800">
+          <p>{error}</p>
+        </div>
+      )}
 
       <ProductGrid products={visibleProducts} onSelect={setSelected} />
 
