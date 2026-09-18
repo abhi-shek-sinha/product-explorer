@@ -12,6 +12,7 @@ For each: what was wrong, **why** it was wrong, and how I fixed it.
 4. founded hydration issue in console because of date.now function rendering directly on server and fixed it using use effect.
 5. filter logic was wrong and there was case-sensitivity issue while comparing and fixed that.  
 6.added product.id  as a key to map product data.
+7. updated the image into next js type.
 
 ## Features I completed
 
