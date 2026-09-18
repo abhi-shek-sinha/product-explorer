@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import { Product } from "@/types/product";
 
 interface ProductCardProps {
@@ -15,9 +15,11 @@ export function ProductCard({ product, onClick }: ProductCardProps) {
     >
       <div className="flex h-40 items-center justify-center">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
+        <Image
           src={product.image}
           alt={product.title}
+          width={200}
+          height={160}
           className="max-h-40 w-auto object-contain"
         />
       </div>

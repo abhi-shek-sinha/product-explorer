@@ -2,6 +2,7 @@
 
 import { Product } from "@/types/product";
 import { AnimatePresence, motion } from "framer-motion";
+import Image from "next/image";
 
 interface ProductModalProps {
   product: Product | null;
@@ -62,17 +63,20 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
               </button>
             </div>
 
-            <div className="mt-6 flex justify-center">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <motion.img
+            <motion.div 
+              className="mt-6 flex justify-center"
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ delay: 0.08, duration: 0.3 }}
+            >
+              <Image
                 src={product.image}
                 alt={product.title}
+                width={300}
+                height={224}
                 className="max-h-56 w-auto object-contain"
-                initial={{ scale: 0.9, opacity: 0 }}
-                animate={{ scale: 1, opacity: 1 }}
-                transition={{ delay: 0.08, duration: 0.3 }}
               />
-            </div>
+            </motion.div>
 
             <motion.p
               className="mt-5 text-sm leading-relaxed text-slate-600"
